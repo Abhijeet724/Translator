@@ -1091,43 +1091,4 @@
         root.render(<App />);
     </script>
 </body>
-</html>         window.scrollTo({ top: 0, behavior: 'smooth' });
-            }, []);
-
-            return (
-                <ToastProvider>
-                    <div className="min-h-screen gradient-bg relative">
-                        {/* Decorative Blobs */}
-                        <div className="blob-1"></div>
-                        <div className="blob-2"></div>
-
-                        {/* Header */}
-                        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-
-                        {/* Main Content */}
-                        <main className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 pb-4">
-                            <TranslatorCard
-                                sourceLang={sourceLang}
-                                targetLang={targetLang}
-                                setSourceLang={setSourceLang}
-                                setTargetLang={setTargetLang}
-                                sourceText={sourceText}
-                                setSourceText={setSourceText}
-                                translatedText={translatedText}
-                                setTranslatedText={setTranslatedText}
-                            />
-                            <TranslationHistory onUseTranslation={handleUseTranslation} />
-                        </main>
-
-                        <Footer />
-                    </div>
-                </ToastProvider>
-            );
-        }
-
-        // ==================== RENDER ====================
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);
-    </script>
-</body>
 </html>
